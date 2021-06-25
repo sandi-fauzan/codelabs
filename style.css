@@ -1,0 +1,516 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 1200px;
+  overflow-x: hidden;
+}
+
+/* Nav */
+.navbar {
+  background: transparent;
+}
+.brand {
+  margin: 20px 60px;
+}
+.navbar-brand {
+  width: 60px;
+}
+.judul-logo {
+  font-weight: 700;
+}
+.nav-link {
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.nav-link:hover {
+  background: #3fccf3;
+  border-radius: 10px;
+}
+
+/* Container */
+.container {
+  background-image: linear-gradient(
+    to right bottom,
+    #3abbff,
+    #26c1fa,
+    #1ec6f4,
+    #27cbed,
+    #39cfe5
+  );
+  min-height: 580px;
+  min-width: 100%;
+}
+
+.jumbo {
+  width: 520px;
+  margin: 200px auto;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(15px, 15px);
+  }
+  100% {
+    transform: translate(-0px, -0px);
+  }
+}
+
+.judul {
+  margin-top: 200px;
+  margin-left: 40px;
+  font-weight: 800;
+  padding: 20px;
+  font-size: 50px;
+}
+.text-judul {
+  margin-left: 40px;
+  padding-left: 20px;
+}
+
+/* About */
+.about {
+  margin: 140px 60px;
+}
+.about .row {
+  opacity: 0;
+  transition: 0.6s;
+  transform: translate(-40px, 0);
+}
+.about .row.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.about button {
+  background-image: linear-gradient(
+    to right bottom,
+    #3abbff,
+    #26c1fa,
+    #1ec6f4,
+    #27cbed,
+    #39cfe5
+  );
+  border-radius: 20px;
+  color: aliceblue;
+  font-size: 15px;
+  margin: 5px 20px;
+  padding: 10px 20px;
+  transition: 1s;
+}
+.about button:hover {
+  color: rgb(21, 178, 228);
+  background: #cce4eb;
+}
+
+.about h1 {
+  margin: 0 20px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.about p {
+  margin: 20px 20px;
+  color: rgb(102, 102, 102);
+}
+.about .img {
+  width: 500px;
+}
+
+/* Project */
+.project {
+  margin: 240px 60px;
+  opacity: 0;
+  transition: 0.6s;
+}
+.project.muncul {
+  opacity: 1;
+}
+.project h1 {
+  margin: 20px 20px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.project p {
+  margin: 20px 20px;
+  color: rgb(102, 102, 102);
+  font-size: 20px;
+}
+
+/* Cards */
+.cards .card {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  margin: 20px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+.cards .card h2 {
+  color: rgb(172, 172, 172);
+  font-size: 17px;
+}
+
+/* What we do? */
+.wedo {
+  margin: 120px 80px;
+}
+.wedo h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.wedo .cards {
+  margin: 30px 0;
+  border: none;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 40px;
+  opacity: 0;
+  transition: 0.6s;
+  transform: translate(0, -40px);
+}
+.wedo .cards.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.wedo .cards h2 {
+  font-weight: 600;
+  font-size: 36px;
+}
+.wedo .cards p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.wedo .cards .card1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/img1.jpg);
+  background-size: cover;
+  padding: 60px 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  width: 360px;
+  height: 600px;
+}
+.wedo .cards .card2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/img2.jpg);
+  background-size: cover;
+  padding: 60px 40px;
+  margin: 30px 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  width: 360px;
+  height: 600px;
+}
+.wedo .cards .card3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/img3.jpg);
+  background-size: cover;
+  padding: 60px 40px;
+  margin: 5px 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  width: 360px;
+  height: 600px;
+}
+
+/* Bidang */
+.bidang {
+  margin: 20px 80px;
+}
+.bidang h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.bidang .card {
+  margin: 20px auto;
+  border-radius: 20px;
+  border: none;
+  max-width: 240px;
+  padding: 60px 40px;
+  background: white;
+  -webkit-box-shadow: 0px 105px 146px -4px rgba(242, 242, 242, 1);
+  -moz-box-shadow: 0px 105px 146px -4px rgba(242, 242, 242, 1);
+  box-shadow: 0px 105px 146px -4px rgba(242, 242, 242, 1);
+  opacity: 0;
+  transition: 0.6s;
+  transform: translate(0, -20px);
+}
+.bidang .card.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.bidang .card h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.bidang .card img {
+  width: 180px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 140px;
+  background: rgb(21, 178, 228);
+  min-height: 210px;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  padding: 30px 20px;
+}
+.footer h3 {
+  font-size: 29px;
+  font-weight: 600;
+}
+.footer p {
+  font-size: 16px;
+}
+
+.footer .icon {
+  position: relative;
+  margin-top: 20px;
+  width: 50px;
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 575.98px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  /* Navbar */
+  .navbar {
+    background: transparent;
+  }
+  .brand {
+    margin: 0;
+  }
+  .navbar-brand {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .judul-logo {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+  }
+  .navbar-nav {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-image: linear-gradient(
+      to right bottom,
+      #3abbff,
+      #26c1fa,
+      #1ec6f4,
+      #27cbed,
+      #39cfe5
+    );
+    width: 100%;
+    text-align: center;
+  }
+  .nav-link {
+    margin-top: 10px;
+    padding-left: 10px;
+    width: fit-content;
+    border-radius: 0;
+  }
+  .nav-link:hover {
+    background: rgb(33, 185, 231);
+    border-radius: 0;
+  }
+  .nav-link.active {
+    border-bottom: 2px solid white;
+  }
+
+  /* Jumbo */
+  .container {
+    background-image: linear-gradient(
+      to right bottom,
+      #3abbff,
+      #26c1fa,
+      #1ec6f4,
+      #27cbed,
+      #39cfe5
+    );
+    min-height: 510px;
+    width: 100%;
+  }
+  .jumbo {
+    width: 280px;
+    margin: 20px auto;
+    display: block;
+    position: absolute;
+  }
+  .judul {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .text-judul {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* About */
+  .about {
+    margin: 120px 0;
+  }
+  .about h1 {
+    margin: 0 20px;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .about p {
+    margin: 20px 20px;
+    color: rgb(102, 102, 102);
+  }
+  .about button {
+    color: aliceblue;
+    font-size: 15px;
+    margin: 5px 20px;
+    padding: 10px 20px;
+  }
+  .about .img {
+    display: none;
+  }
+
+  /* Project */
+  .project {
+    margin: 20px 0;
+  }
+  .project h1 {
+    margin: 0 20px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .project p {
+    margin: 20px 20px;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+  }
+
+  /* Cards */
+  .cards .card {
+    border: none;
+    background-color: rgb(233, 233, 233);
+    margin: 20px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+  .cards .card h2 {
+    color: rgb(172, 172, 172);
+    font-size: 17px;
+  }
+
+  /* What we do? */
+  .wedo {
+    margin: 120px 20px;
+  }
+  .wedo h1 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .wedo .cards {
+    margin: 30px 0;
+    border: none;
+    color: white;
+    display: block;
+  }
+  .wedo .cards h2 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+  .wedo .cards p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .wedo .cards .card1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(img/img1.jpg);
+    background-size: cover;
+    padding: 60px 40px;
+    margin: 30px 0;
+    border-radius: 20px;
+    width: 280px;
+    height: 460px;
+  }
+  .wedo .cards .card2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(img/img2.jpg);
+    background-size: cover;
+    padding: 60px 40px;
+    margin: 30px 0;
+    border-radius: 20px;
+    width: 280px;
+    height: 460px;
+  }
+  .wedo .cards .card3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(img/img3.jpg);
+    background-size: cover;
+    padding: 60px 40px;
+    margin: 5px 0;
+    border-radius: 20px;
+    width: 280px;
+    height: 460px;
+  }
+
+  /* Bidang */
+  .bidang {
+    margin: 20px;
+  }
+  .bidang h1 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .bidang .card {
+    margin: 20px auto;
+    border-radius: 20px;
+    border: none;
+    max-width: 240px;
+    padding: 60px 40px;
+    background: white;
+    -webkit-box-shadow: 0px 105px 146px -4px rgba(242, 242, 242, 1);
+    -moz-box-shadow: 0px 105px 146px -4px rgba(242, 242, 242, 1);
+    box-shadow: 0px 105px 146px -4px rgba(242, 242, 242, 1);
+  }
+  .bidang .card h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .bidang .card img {
+    width: 180px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 140px;
+    background: rgb(21, 178, 228);
+    min-height: 210px;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    padding: 30px 20px;
+  }
+  .footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .footer p {
+    font-size: 13px;
+  }
+}

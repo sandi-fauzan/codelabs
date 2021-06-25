@@ -1,0 +1,220 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 1200px;
+  overflow-x: hidden;
+}
+
+/* Nav */
+.navbar {
+  background: transparent;
+}
+.brand {
+  margin: 20px 60px;
+}
+.navbar-brand {
+  width: 60px;
+}
+.judul-logo {
+  font-weight: 700;
+}
+.nav-link {
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.nav-link:hover {
+  background: #3fccf3;
+  border-radius: 10px;
+}
+
+/* Container */
+.container {
+  background-image: linear-gradient(
+    to right bottom,
+    #3abbff,
+    #26c1fa,
+    #1ec6f4,
+    #27cbed,
+    #39cfe5
+  );
+  min-height: 580px;
+  min-width: 100%;
+}
+.jumbo {
+  width: 280px;
+  margin: 20px auto;
+  display: block;
+  position: absolute;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(-0px, -0px);
+  }
+}
+.judul {
+  margin-top: 200px;
+  margin-left: 40px;
+  font-weight: 800;
+  padding: 20px;
+  font-size: 50px;
+}
+.text-judul {
+  margin-left: 40px;
+  padding-left: 20px;
+}
+.container .img {
+  width: 520px;
+  margin-top: 200px;
+  margin-left: 10px;
+}
+
+/* cSoon */
+.csoon {
+  padding: 400px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 140px;
+  background: rgb(21, 178, 228);
+  min-height: 210px;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  padding: 30px 20px;
+}
+.footer h3 {
+  font-size: 29px;
+  font-weight: 600;
+}
+.footer p {
+  font-size: 16px;
+}
+.footer .icon {
+  position: relative;
+  margin-top: 20px;
+  width: 50px;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  /* Navbar */
+  .navbar {
+    background: transparent;
+  }
+  .brand {
+    margin: 0;
+  }
+  .navbar-brand {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .judul-logo {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+  }
+  .navbar-nav {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-image: linear-gradient(
+      to right bottom,
+      #3abbff,
+      #26c1fa,
+      #1ec6f4,
+      #27cbed,
+      #39cfe5
+    );
+    width: 100%;
+    text-align: center;
+  }
+  .nav-link {
+    margin-top: 10px;
+    padding-left: 10px;
+    width: fit-content;
+    border-radius: 0;
+  }
+  .nav-link.active {
+    border-bottom: 2px solid white;
+  }
+  .nav-link:hover {
+    background: rgb(33, 185, 231);
+    border-radius: 0;
+  }
+
+  /* Jumbo */
+  .container {
+    background-image: linear-gradient(
+      to right bottom,
+      #3abbff,
+      #26c1fa,
+      #1ec6f4,
+      #27cbed,
+      #39cfe5
+    );
+    min-height: 510px;
+    width: 100%;
+  }
+  .jumbo {
+    margin: 20px auto;
+    display: block;
+    position: absolute;
+  }
+  .judul {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .text-judul {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .container .img {
+    margin: 60px 0;
+    width: 290px;
+    position: absolute;
+  }
+
+  /* CSOON */
+  .csoon {
+    margin: 600px auto;
+    padding: 0;
+  }
+
+  /* Footer */
+  .footer {
+    position: relative;
+    margin-top: 140px;
+    background: rgb(21, 178, 228);
+    width: 100%;
+    bottom: 0;
+    color: white;
+    padding: 30px 20px;
+  }
+  .footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .footer p {
+    font-size: 13px;
+  }
+}
