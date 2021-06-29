@@ -446,6 +446,8 @@ body {
     border-radius: 20px;
     width: 280px;
     height: 460px;
+    object-fit: cover;
+    object-position: center;
   }
   .wedo .cards .card2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -456,6 +458,8 @@ body {
     border-radius: 20px;
     width: 280px;
     height: 460px;
+    object-fit: cover;
+    object-position: center;
   }
   .wedo .cards .card3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -466,6 +470,8 @@ body {
     border-radius: 20px;
     width: 280px;
     height: 460px;
+    object-fit: cover;
+    object-position: center;
   }
 
   /* Bidang */
