@@ -239,6 +239,9 @@ body {
   .teams {
     margin-top: 80px;
   }
+  .teams p {
+    font-size: 14px;
+  }
   .teams .card {
     border: none;
   }
