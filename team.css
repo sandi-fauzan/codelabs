@@ -83,6 +83,9 @@ body {
 .teams {
   margin-top: 80px;
 }
+.teams p {
+  text-align: center;
+}
 .teams .row {
   margin-top: 20px;
 }
