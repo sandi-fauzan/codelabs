@@ -288,7 +288,7 @@ body {
 /* Responsif untuk ponsel */
 @media (max-width: 575.98px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     width: 100%;
   }
   /* Navbar */
